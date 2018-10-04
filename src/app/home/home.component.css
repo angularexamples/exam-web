@@ -1,0 +1,43 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+.btn-cyan {
+  background-color: #00BCB1!important;
+  color: #fff!important;
+}
+.fa-times-circle {
+  font-size: 25px;
+  color: black;
+}
+.light-blue.darken-3 {
+  background:linear-gradient(45deg, #1de099, #1dc8cd);
+}
+a, a.disabled:hover, a:disabled:hover {
+  color: black;
+}
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1C2331 !important;
+  }
+}

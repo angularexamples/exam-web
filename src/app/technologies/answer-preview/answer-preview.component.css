@@ -1,0 +1,60 @@
+
+.qa_list {
+    border: 1px dashed #aacdde;
+    background: #f3fafd;
+}
+ul {
+ list-style-type: square;
+}
+.green {
+    color : green;
+    background-color : transparent !important;
+}
+.red {
+    color : red;
+    background-color : transparent !important;
+}
+.qa_list ol li {
+    margin-bottom: 15px;
+}
+.qa_list ol {
+   list-style-type: upper-alpha;
+} 
+
+.quiz-index .widget-title {
+    font-size: 18px;
+    padding: 10px;
+    color: #000000;
+    border-bottom: 1px solid #e2e2e2;
+    text-align: center;
+}
+.quiz-index {
+    position: fixed;
+    width: 26%;
+    margin-top: 33px;
+    border: 1px solid #e2e2e2;
+}
+.widget-content p {
+    margin: 15px;
+    margin-right: 45px;
+}
+@media (min-width: 1024px) {
+    .qa_list {
+        padding: 20px;
+        font-size: 15px;
+        margin: 0px 10px 10px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .qa_list {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+    .quiz-index {
+        position: relative;
+        width: 100%
+     } 
+}

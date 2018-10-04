@@ -1,0 +1,77 @@
+<div class="page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="sticky-wrapper is-sticky">
+                    <div class="test-heading">
+                        <h5 style="padding-left: 15px;">Topic Name</h5>
+                    </div>
+                    <div class="qa_list" *ngFor="let qns of questions;index as q">
+                        <p>{{q+1}}.{{qns.question}}</p>
+                        <ul class="qa_sub_list" *ngFor="let option of qns.question_options;index as i">
+                            <li>
+                                <input type="radio" name="option[{{qns.id}}]" value="{{option.id}}" (click)="selected(qns.id,option.id)"> {{option.options}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <button type="button" class="btn btn-block" (click)='submitExam()'>SUBMIT TEST</button> -->
+            </div>
+            <div class="col-md-4">
+                <div class="quiz-index">
+                    <div class="counter">
+                        <i class="fa fa-clock-o"></i> Time Left -
+                        <span>{{ miliseconds |date:'HH:mm:ss':'+0000' }} Seconds Left....</span>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-title">Questions Index</div>
+                        <div class="widget-content">
+                            <button class="btn" *ngFor="let qns of questions;index as q" [style.background-color]='selectedIndex == qns.id?"blue":"none"'>{{q+1}}</button>
+                        </div>
+                        <button  class="btn btn-block" data-toggle="modal" data-target="#centralModalInfo" type="button"> SUBMIT TEST</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Central Modal Medium Info -->
+<div class="modal fade" id="centralModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <p class="heading lead">Test Info</p>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body">
+                <div class="text-center">
+                    <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                    <p>Would you like to submit the test?</p>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <a type="button" class="btn btn-primary" (click)="submitExam()" data-dismiss="modal">Confirm Submission</a>
+                <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Coutinue the Test</a>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- Central Modal Medium Info-->
+
+<ngx-spinner
+bdColor="rgba(51,51,51,0.8)"
+size="medium"
+color="#fff"
+type="ball-scale-multiple">
+<p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>

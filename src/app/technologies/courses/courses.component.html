@@ -1,0 +1,20 @@
+<div class="page">
+  <h1 style="padding-left: 15px;">Web Development</h1>
+  <div class="container-fluid tech">
+    <div class="row">
+      <div class="col-md-2 course" *ngFor="let course of courses">
+        <p>{{ course.name | titlecase }}</p>
+        <span>
+          <button type="button" class="btn btn-raised btn-info btn-sm" (click)="topic(course.id)">TAKE TEST</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<ngx-spinner
+bdColor="rgba(51,51,51,0.8)"
+size="medium"
+color="#fff"
+type="ball-scale-multiple">
+<p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>

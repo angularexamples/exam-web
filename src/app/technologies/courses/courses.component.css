@@ -1,0 +1,27 @@
+.tech .col-md-2 {
+    background-color: #dedede; 
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 50px 10px;
+    width: 100%;
+    height: 150px;
+    display: block;
+    font-size: 16px;
+    position: relative;
+    color: #000000;
+}
+.course span {
+    display: none;
+}
+.course:hover span {
+    display: block;
+}
+.course:hover p {
+    display: none;    
+}
+.tech .col-md-2:hover {
+    background-color: antiquewhite;
+}
+.page {
+    z-index: 1000;
+}

@@ -1,0 +1,13 @@
+<div class="page">
+  <h1 style="padding-left: 15px;">Course Name</h1>
+  <div class="container-fluid tech">
+    <div class="row">
+      <div class="col-md-2 topic" *ngFor="let topic of topics">
+        <p>{{topic?.name}}</p>
+        <span>
+          <button routerLink="/technologies/test/{{topic?.id}}" type="button" class="btn btn-raised btn-info btn-sm">TAKE TEST</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

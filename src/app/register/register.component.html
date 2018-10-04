@@ -1,0 +1,69 @@
+<!--Body-->
+<div class="modal-body">
+  <!-- form -->
+  <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+    <div class="md-form form-sm">
+      <i class="fa fa-user prefix"></i>
+      <input type="text" id="first_name" class="form-control form-control-sm validate" formControlName="first_name">
+      <label for="first_name">First Name</label>
+      <div *ngIf="formErrors.first_name" class="small text-danger formErrors text-center" [innerHTML]="formErrors.first_name">
+      </div>
+    </div>
+
+    <div class="md-form form-sm">
+      <i class="fa fa-user prefix"></i>
+      <input type="text" id="last_name" class="form-control form-control-sm validate" formControlName="last_name">
+      <label for="last_name">Last Name</label>
+      <div *ngIf="formErrors.last_name" class="small text-danger formErrors text-center" [innerHTML]="formErrors.last_name">
+      </div>
+    </div>
+
+    <div class="md-form form-sm">
+      <i class="fa fa-envelope prefix"></i>
+      <input type="email" id="remail" class="form-control form-control-sm validate" formControlName="email">
+      <label for="remail">Your Email</label>
+      <div *ngIf="formErrors.email" class="small text-danger formErrors text-center" [innerHTML]="formErrors.email">
+      </div>
+    </div>
+
+    <div class="md-form form-sm">
+      <i class="fa fa-mobile prefix"></i>
+      <input type="text" id="contact_number" class="form-control form-control-sm validate" formControlName="contact_number">
+      <label for="contact_number">Your Mobile Number</label>
+      <div *ngIf="formErrors.contact_number" class="small text-danger formErrors text-center" [innerHTML]="formErrors.contact_number">
+      </div>
+    </div>
+
+    <div class="md-form form-sm">
+      <i class="fa fa-lock prefix"></i>
+      <input type="password" id="rpassword" class="form-control form-control-sm validate" formControlName="password">
+      <label for="password">Your password</label>
+      <div *ngIf="formErrors.password" class="small text-danger formErrors text-center" [innerHTML]="formErrors.password">
+      </div>
+    </div>
+
+    <div class="text-center mt-2">
+      <button class="btn btn-info" type="submit">Sign up
+        <i class="fa fa-sign-in ml-1"></i>
+      </button>
+    </div>
+  </form>
+</div>
+<!--Footer-->
+<div class="modal-footer">
+  <p>Or Signup with social accounts?</p>
+  <div>
+    <!--Facebook-->
+    <a type="button" class="btn-lg" style="background: #3C589A;" (click)="socialSignIn('facebook')" title="sign in with facebook">
+      <i class="fa fa-facebook"></i>
+    </a>
+    <!--Google +-->
+    <a type="button" class="btn-lg" style="background: #dd4b39;" (click)="socialSignIn('google')" title="sign in with google">
+      <i class="fa fa-google-plus"></i>
+    </a>
+    <!--Linkedin-->
+    <a type="button" class="btn-lg"  style="background: #0077B5;" (click)="socialSignIn('linkedin')" title="sign in with linkedin">
+      <i class="fa fa-linkedin"></i>
+    </a>
+  </div>
+</div>

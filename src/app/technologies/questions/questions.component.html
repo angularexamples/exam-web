@@ -1,0 +1,16 @@
+<div class="sticky-wrapper is-sticky">
+  <div class="counter">
+    <i class="fa fa-clock-o"></i> Time Left -
+    <span>{{timeLeft}} Seconds Left....</span>
+  </div>
+  <div class="qa_list" *ngFor="let qns of questions;index as i">
+    <p>{{i+1}}.{{qns.question}}</p>
+    <ul class="qa_sub_list" *ngFor="let option of qns.question_options;index as i">
+      <li>
+        <input type="radio" name="option[1504]" value="906 km"> {{option.options}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<button type="button" class="btn btn-block">SUBMIT TEST</button>

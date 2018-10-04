@@ -1,0 +1,13 @@
+li.nav-item.login {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    margin-right: 15px;
+}
+.top-nav-collapse {
+    background: rgb(13, 165, 165);
+}
+.btn-lg .fa{
+    color: white
+}
+a.dropdown-item.waves-effect.waves-light:hover {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+}

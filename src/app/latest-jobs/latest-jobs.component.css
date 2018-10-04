@@ -1,0 +1,92 @@
+.job-grid {
+    box-shadow: none;
+    border: 2px solid #e8ecec;
+}
+.job-grid .job-title-sec {
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8ecec;
+}
+.job-grid .job-lctn {
+    float: left;
+    width: auto;
+    font-size: 13px;
+    margin: 18px 0;
+}
+.job-grid .job-title-sec .c-logo {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.job-grid .job-title-sec h3 {
+    float: left;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding-left: 0px;
+    margin-bottom: 6px;
+}
+.job-title-sec h3 {
+    display: table;
+    font-size: 15px;   
+    color: #202020;
+}
+.job-title-sec span {
+    float: left;
+    font-family: Open Sans;
+    font-size: 13px;
+    margin-top: 1px;
+    color: #fb236a;
+}
+.job-grid .job-title-sec span {
+    margin-left: 0px;
+}
+.job-grid .job-title-sec span {
+    margin-left: 0px;
+}
+
+.job-grid .fav-job {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    font-size: 21px;
+    color: #A3A3A3;
+}
+.fav-job {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 25px;
+    color: #888888;
+    line-height: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.job-grid .job-lctn {
+    float: left;
+    width: auto;
+    margin: 18px 0;
+}
+.job-grid > a {
+    float: right;
+    font-family: Open Sans;
+    font-size: 13px;
+    color: #fb236a;
+    border: 1px solid #fb236a;
+    border-radius: 20px;
+    padding: 6px 14px;
+    letter-spacing: 0px;
+    margin: 16px 0;
+    display: inline-block;
+}
+.job-grid {
+    float: left;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 0px 20px;
+    margin-top: 30px;
+}

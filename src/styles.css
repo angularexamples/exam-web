@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+.page {
+    padding-top: 70px;
+    min-height: 580px
+}
+.btn {
+    box-shadow: none !important;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: initial !important;
+}

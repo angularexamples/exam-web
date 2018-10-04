@@ -1,0 +1,81 @@
+.widget{
+    border: 1px solid #e2e2e2;
+    margin-top: 33px;
+}
+.quiz-index .widget-title {
+    font-size: 18px;
+    padding: 10px;
+    color: #000000;
+    border-bottom: 1px solid #e2e2e2;
+    text-align: center;
+}
+.quiz-index {
+    position: fixed;
+    width: 26%;
+    margin-top: 33px;
+}
+
+.widget-content {
+    padding: 10px;
+}
+.widget-content .btn {
+    margin: 3px;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    background-color: #dedede;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 0px;
+}
+.btn-block {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+}
+.sticky-wrapper {
+    border: 1px dotted #CCC;
+}
+.test-heading {
+    background:linear-gradient(45deg, #1de099, #1dc8cd);;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+.qa_list {
+    border: 1px dashed #aacdde;
+    background: #f3fafd;
+}
+ul {
+    list-style-type: none !important;
+}
+ul.qa_sub_list li input[type="radio"] {
+    float: left;
+    margin: 5px 10px 0px 0px;
+}
+.sticky-wrapper .btn {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+}
+@media (min-width: 1024px) {
+    .qa_list {
+        padding: 20px;
+        font-size: 15px;
+        margin: 0px 10px 10px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .qa_list {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+    .quiz-index {
+        position: relative;
+        width: 100%
+     } 
+}
+

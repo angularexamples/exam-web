@@ -1,0 +1,40 @@
+.sticky-wrapper {
+    border: 1px dotted #CCC;
+}
+.counter {
+    background:linear-gradient(45deg, #1de099, #1dc8cd);;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+.qa_list {
+    border: 1px dashed #aacdde;
+    background: #f3fafd;
+}
+ul {
+    list-style-type: none !important;
+}
+ul.qa_sub_list li input[type="radio"] {
+    float: left;
+    margin: 5px 10px 0px 0px;
+}
+.btn {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+}
+@media (min-width: 1024px) {
+    .qa_list {
+        padding: 20px;
+        font-size: 15px;
+        margin: 0px 10px 10px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .qa_list {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+

@@ -1,0 +1,34 @@
+<div class="page">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <h5 style="padding-left: 15px;">Topic Name</h5>
+        <div class="sticky-wrapper is-sticky">
+          <div class="qa_list" *ngFor="let exam_result of examResults;index as q">
+            <p>{{q+1}}.{{exam_result.question.question}}</p>
+            <ol class="qa_sub_list">
+              <li *ngFor="let option of exam_result.question.question_options;index as i" [ngClass]='((exam_result.answer_id == option.id) && (option.is_correct == true)) ?"green":((exam_result.answer_id == option.id) && (option.is_correct == false))?"red":(option.is_correct == true)?"green":"none"'>
+                <i *ngIf="exam_result.answer_id == option.id" class="fa fa-user"></i>
+                {{option.options}}
+                <i *ngIf="((exam_result.answer_id == option.id) && (option.is_correct == true)) || (option.is_correct == true)" class="fa fa-check-circle"></i>
+                <i *ngIf="(exam_result.answer_id == option.id) && (option.is_correct == false)" class="fa fa-times"></i>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="quiz-index">
+          <div class="widget-title">Your Result</div>
+          <div class="widget-content">
+            <p>Total No. of Questions : <span class="pull-right">{{totalQns}}</span></p>
+            <p>Number of Correct Answers :  <span class="pull-right">{{correctAns}}</span></p>
+            <p>Number of Wrong Answers : <span class="pull-right">{{totalQns - correctAns}}</span></p>
+            <hr>
+            <p>Your Score (in %) : <span class="pull-right">{{correctAns/totalQns*100}}%</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

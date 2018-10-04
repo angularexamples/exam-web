@@ -1,0 +1,14 @@
+
+.md-form {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+.modal-footer {
+    text-align: center;
+    display: block;
+}
+.btn-lg {
+    border-radius: 50%;    
+    color: white !important;
+    margin-right: 10px;
+}
